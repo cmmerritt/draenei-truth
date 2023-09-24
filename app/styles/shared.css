@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'MoonDance';
+  font-weight: 400;
+  src: url('/fonts/MoonDance-Regular.ttf'), format('ttf');
+}
+
+@font-face {
+  font-family: 'RobotoCondensedRegular';
+  font-weight: 400;
+  src: url('/fonts/RobotoCondensed-Regular.ttf'), format('ttf');
+}
+
+body {
+  font-family: 'MoonDance';
+  color: aqua;
+  background-repeat: repeat;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-family: 'MoonDance';
+}
+
+.title {
+  text-align: center;
+  font-size: 7em;
+}
+
+.info {
+  text-align: center;
+  font-size: 2em;
+  color: white;
+  font-family: 'RobotoCondensedRegular';
+}
+
+.construction-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+

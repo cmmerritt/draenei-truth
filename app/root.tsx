@@ -1,5 +1,5 @@
-import { cssBundleHref } from "@remix-run/css-bundle";
-import type { LinksFunction } from "@remix-run/node";
+//import { cssBundleHref } from "@remix-run/css-bundle";
+import type { MetaFunction } from "@remix-run/node";
 import {
   Links,
   LiveReload,
@@ -9,9 +9,12 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 
-export const links: LinksFunction = () => [
-  ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
-];
+export const meta: MetaFunction = () => {
+  return [
+    { title: "Draenei Truth" },
+    { name: "description", content: "The truth about draenei" },
+  ];
+};
 
 export default function App() {
   return (
@@ -23,10 +26,10 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <Outlet />
-        <ScrollRestoration />
-        <Scripts />
-        <LiveReload />
+          <Outlet />
+          <ScrollRestoration />
+          <Scripts />
+          <LiveReload />
       </body>
     </html>
   );
